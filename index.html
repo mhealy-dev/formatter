@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.js"
-      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <textarea id="data" rows="25"></textarea>
-      <button class="button-19" id="inp" role="button">SUBMIT</button>
-      <button class="button-19" id="copy" role="button" disabled>COPY</button>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <textarea id="data" rows="25" placeholder="Enter text here..."></textarea>
+    <div class="dlm-and-btn">
+        <input type="text" id="delimiter" class="dlm-inp" placeholder="Enter a delimiter (e.g., ', OR) - Quotes are added by default"/>
+        <div class="btn-ctr">
+            <button class="btn" id="inp">Format</button>
+            <button class="btn" id="copy" disabled>Copy to clipboard</button>
+            <button class="btn" id="clear" disabled>Clear contents</button>
+        </div>
     </div>
+  </div>
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
